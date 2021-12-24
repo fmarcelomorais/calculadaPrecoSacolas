@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Home Brinds - Sacolas</title>
+  </head>
+  <body>
+    <div class="container-fluid ">
+        <nav class="navbar navbar-dark bg-info">
+            <span class="navbar-brand mb-0 h1 ">Home Brinds</span>
+          </nav>
+        <div class="container">
+              <h2>Preço Sacolas</h2>
+              <hr>
+              <form >
+                <div class="form-row align-items-center">
+
+                    <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInputGroup">Quantidade</label>
+                        <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">Quantidade</div>
+                          </div>
+                          <input type="number" class="form-control" id="quantidade" placeholder="1000" min="100">
+                        </div>
+                      </div>
+                    <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInputGroup">Cor</label>
+                        <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">Qunatidade de Cores</div>
+                          </div>
+                          <input type="number" class="form-control" id="cor" placeholder="1" min="1">
+                        </div>
+                      </div>
+                    <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInputGroup">Lucro</label>
+                        <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">Lucro</div>
+                          </div>
+                          <input type="number" class="form-control" id="lucro" min="60" placeholder="R$ 60" step="any">
+                        </div>
+                    </div>                  
+                    <button class="btn btn-success mb-2" id="btnCalc">Calcular</button>
+                </div>                    
+              </form>
+              <hr>
+              <div class="container">
+                <table class="table table-striped table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">Sacola</th>
+                        <th scope="col">Tamanho</th>
+                        <th scope="col">Quantidade</th>
+                        <th scope="col">Valor</th>
+                        <th scope="col">Cor(es)</th>
+                      </tr>
+                    </thead>
+                    <tbody id="informacoes">
+                     <!--  <tr>
+                        <th scope="row">Vazada 16x30</th>
+                        <td>1000</td>
+                        <td>R$ 154</td>
+                        <td>1</td>
+                      </tr>                      -->
+                    </tbody>
+                  </table>
+              </div>
+        </div>
+        <footer class="container-fluid bg-info">
+            Desenvolvido por Marcelo Morais
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

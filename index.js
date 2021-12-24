@@ -35,8 +35,7 @@ function calculcaPrecoSacola(e){
     sacolaPintada.forEach((s, i) => {
         let html = `
         <tr>
-            <td>${tamSacolasVazadas[i].tipo}</td>
-            <td>${tamSacolasVazadas[i].tam}</td>
+            <td>${tamSacolasVazadas[i].tipo} - ${tamSacolasVazadas[i].tam}</td>           
             <td>${qtd}</td>
             <td>R$ ${Number(s).toFixed(2)}</td>
             <td>${cor}</td>

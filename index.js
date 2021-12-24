@@ -24,13 +24,13 @@ function calculcaPrecoSacola(e){
     const qtd = document.getElementById("quantidade").value
     const cor = document.getElementById("cor").value
     const lucro = document.getElementById("lucro").value
-
+    console.log(lucro)
     const kgPorQuantidade =  tamSacolasVazadas.map(sacola => (sacola.kg * qtd) / sacola.milheiro)
     const pinturas = pintura(qtd,cor)
     const valorSacolaPorQtd = kgPorQuantidade.map(sacola => sacola * VALOR_SACOLA )
     
 
-    const sacolaPintada = valorSacolaPorQtd.map(sacolaPintada => sacolaPintada + pinturas + lucro)
+    const sacolaPintada = valorSacolaPorQtd.map(sacolaPintada => sacolaPintada + pinturas + Number(lucro))
     document.getElementById('informacoes').innerHTML = " "
     sacolaPintada.forEach((s, i) => {
         let html = `

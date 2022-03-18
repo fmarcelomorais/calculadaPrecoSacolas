@@ -9,4 +9,4 @@
  - Bootstrap
  - Javascript
 
-> Link para teste: https://fmarcelomorais.github.io/homebrindes/
+> Link para teste: https://fmarcelomorais.github.io/calculadaPrecoSacolas/
